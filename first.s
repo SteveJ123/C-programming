@@ -15,9 +15,11 @@ LFB10:
 	movl	%esp, %ebp
 	.cfi_def_cfa_register 5
 	andl	$-16, %esp
-	subl	$16, %esp
+	subl	$32, %esp
 	call	___main
-	movl	$5, 4(%esp)
+	movl	$10, 28(%esp)
+	movl	28(%esp), %eax
+	movl	%eax, 4(%esp)
 	movl	$LC0, (%esp)
 	call	_printf
 	movl	$0, %eax

@@ -1,19 +1,35 @@
 #include<stdio.h>
+#include <conio.h>
 
 
-// int test1 = 12;
+// void incr();
 
-#define TEST 5
+// static int count = 4;
+
+int main() {
+//    incr();
+//    incr();
+char a;
+printf("enter value: ");
+a = getchar();
+printf("entered value: %c", a);
+printf("enter value: ");
+a = getche();
+printf("entered value: %c", a);
+printf("enter value: ");
+a = getch();
+printf("entered value: %c", a);
 
 
-
-int main(){
-    
-    // printf("long int is: %d ", test1);
-    printf("%d \n", TEST);
-    return 0;
+   return 0;
 }
 
+
+// void incr(){
+//     // static int count = 4;
+//     printf("count value is: %d", count);
+//     count++;
+// }
 
 
 
